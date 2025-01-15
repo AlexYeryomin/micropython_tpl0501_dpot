@@ -16,9 +16,6 @@
 # the impedance of the device is not known. Upon power up, the device
 # will reset to 0x80 code (middle position) because this device does
 # not contain non-volatile memory.
-#
-# The library allows to reset the wiper either to the lowest
-# or the highest position when initialized.
 
 from micropython import const
 from machine import Pin, SPI
