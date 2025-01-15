@@ -18,7 +18,7 @@ the impedance of the device is not known. Upon power up, the device
 will reset to 0x80 code (middle position) because this device does
 not contain non-volatile memory.
 
-The library should work for any microcontroller that supports MicroPython. As an example, let's use Raspberry Pi Pico. Connect TPL0501 module to a microcontroller as shown below. You don't need the level shifter, the module works with 3.3V directly from the microcontroller, but you can provide 5V to power it and separate use 3.3V as V(H) to not saturate Pico's ADC. Upload the file 'tpl0501.py' to a microcontroller and run the test program 'test_tpl5001.py'.
+The library should work for any microcontroller that supports MicroPython. As an example, let's use Raspberry Pi Pico. Connect TPL0501 module to a microcontroller as shown below. You don't need the level shifter, the module works with 3.3V directly from the microcontroller, but you can provide 5V to power it and use 3.3V separately as V(H) to not saturate Pico's ADC. Upload the file 'tpl0501.py' to a microcontroller and run the test program 'test_tpl5001.py'.
 
 ![schematics](rp2040_tpl0501_schematics.png)
 
