@@ -8,6 +8,9 @@ of the TPL0501 can be accessed using a SPI-compatible interface.
 See TPL0501 datasheet:
 https://www.ti.com/lit/ds/symlink/tpl0501-100.pdf?ts=1736053555929
 
+According to Table 2. DPOT Ideal Values ​​in the datasheet, the resistance for 0 value is 0.00Ω and for 255 is 99.61kΩ.
+The resistance value of the potentiometer, 100kΩ, however, it may vary a lot from a minimum of 80k to a maximum of 120kΩ.
+
 Note, as for the mechanical potentiometer, there is no interface
 to read the current wiper's position. According to the datasheet,
 section 9.2 Wiper Position Upon Power Up, when DPOT is powered off,
@@ -18,3 +21,5 @@ not contain non-volatile memory.
 The library should work for any microcontroller that supports MicroPython. As an example, let's use Raspberry Pi Pico. Connect TPL0501 module to a microcontroller as shown below. You don't need the level shifter, the module works with 3.3V directly from the microcontroller, however, it is better to provide 5V. Upload the file 'tpl0501.py' to a microcontroller and run the test program 'test_tpl5001.py'.
 
 ![schematics](rp2040_tpl0501_schematics.png)
+
+
